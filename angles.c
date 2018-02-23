@@ -201,10 +201,27 @@ int main()
             }else{
             printf("sorry?\n");
             }
-    }
-    }else{
-    printf("wat\n");
-    }
+    }else
+    //acute
+    if(a==90){
+        printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
+        printf("The sine of 90 is equal to 1 and\nThe sine of 270 = -1\nBoth cosines equals to 0 though\n");
+    }else
 
+    if(a==180){
+        printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
+        printf("The cosine of 180 is equal to -1 and\nThe cosine of 0(360) = 1\nBoth sines equals to 0 though\n");
+    }else
+
+    if(a==270){
+        printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
+        printf("The sine of 270 is equal to -1 and\nThe sine of 90 = 1\nBoth cosines equals to 0 though\n");
+    }else
+
+    if(a==360){
+        printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
+        printf("The cosine of 360(0) is equal to 1 and\nThe cosine of 180 = -1\nBoth sines equals to 0 though\n");
+    }
+}
     return 0;
 }
