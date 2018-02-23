@@ -16,7 +16,7 @@ int main()
         }else if(a<0){
             printf("wtf?\n");
         }
-//1บ quadrant
+//1ยบ quadrant
     if((a>0)&&(a<90)){
 
         if( (sct == 's') || (sct == 'S') ){
@@ -35,7 +35,7 @@ int main()
             printf("sorry?\n");
             }
     }else
-//2บ quadrant
+//2ยบ quadrant
     if( (a>90)&&(a<180) ){
 
         if( (sct == 's') || (sct == 'S') ){
@@ -54,7 +54,7 @@ int main()
             printf("sorry?\n");
             }
     }else
-//3บ quadrant
+//3ยบ quadrant
     if( (a>180)&&(a<270) ){
 
         if( (sct == 's') || (sct == 'S') ){
@@ -73,7 +73,7 @@ int main()
             printf("sorry?\n");
             }
     }else
-//4บ quadrant
+//4ยบ quadrant
     if( (a>270)&&(a<360) ){
 
         if( (sct == 's') || (sct == 'S') ){
@@ -118,7 +118,7 @@ int main()
         g = a / 360;
         h = a;
         a = f;
-        //1บ quadrant
+        //1ยบ quadrant
     if((a>0)&&(a<90)){
 
         if( (sct == 's') || (sct == 'S') ){
@@ -139,7 +139,7 @@ int main()
             printf("sorry?\n");
             }
     }else
-//2บ quadrant
+//2ยบ quadrant
     if( (a>90)&&(a<180) ){
 
         if( (sct == 's') || (sct == 'S') ){
@@ -160,7 +160,7 @@ int main()
             printf("sorry?\n");
             }
     }else
-//3บ quadrant
+//3ยบ quadrant
     if( (a>180)&&(a<270) ){
 
         if( (sct == 's') || (sct == 'S') ){
@@ -181,7 +181,7 @@ int main()
             printf("sorry?\n");
             }
     }else
-//4บ quadrant
+//4ยบ quadrant
     if( (a>270)&&(a<360) ){
 
         if( (sct == 's') || (sct == 'S') ){
