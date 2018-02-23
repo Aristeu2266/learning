@@ -31,76 +31,76 @@ int main()
 
 //1º quadrant
     if((a>0)&&(a<90)){
+        b = a;
+        c = 180 - a;
+        d = 180 + a;
+        e = 360 - a;
 
         if( (sct == 's') || (sct == 'S') ){
-            b = a;
-            c = 180 - a;
-            d = 180 + a;
-            e = 360 - a;
+
             printf(" Sin %d  =  Sin %d\n-Sin %d = -Sin %d\n", a, c, e, d);
+
         }else if ( (sct == 'c') || (sct == 'C') ){
-                b = a;
-                c = 180 - a;
-                d = 180 + a;
-                e = 360 - a;
+
                 printf(" Cos %d  =  Cos %d\n-Cos %d = -Cos %d\n", a, e, c, d);
+
             }else{
             printf("sorry?\n");
             }
     }else
 //2º quadrant
     if( (a>90)&&(a<180) ){
+        b = 180 - a;
+        c = a;
+        d = 360 - a;
+        e = 180 + a;
 
         if( (sct == 's') || (sct == 'S') ){
-            b = 180 - a;
-            c = a;
-            d = 360 - a;
-            e = 180 + a;
+
             printf(" Sin %d = Sin %d\n-Sin %d = -Sin %d\n", a, b, d, e);
+
         }else if ( (sct == 'c') || (sct == 'C') ){
-                b = 180 - a;
-                c = a;
-                d = 360 - a;
-                e = 180 + a;
+
                 printf("-Cos %d = -Cos %d\n Cos %d = Cos %d\n", a, d, b, e);
+
             }else{
             printf("sorry?\n");
             }
     }else
 //3º quadrant
     if( (a>180)&&(a<270) ){
+        b = a - 180;
+        c = 360 - a;
+        d = a;
+        e = 360 - b;
 
         if( (sct == 's') || (sct == 'S') ){
-            b = a - 180;
-            c = 360 - a;
-            d = a;
-            e = 360 - b;
+
             printf("-Sin %d = -Sin %d\n Sin %d = Sin %d\n", a, e, c, b);
+
         }else if ( (sct == 'c') || (sct == 'C') ){
-                b = a - 180;
-                c = 360 - a;
-                d = a;
-                e = 360 - b;
+
                 printf("-Cos %d = -Cos %d\n Cos %d = Cos %d\n", a, c, e, b);
+
             }else{
             printf("sorry?\n");
             }
     }else
 //4º quadrant
     if( (a>270)&&(a<360) ){
-
-        if( (sct == 's') || (sct == 'S') ){
             b = 360 - a;
             c = a - 180;
             d = 360 - c;
             e = a;
+
+        if( (sct == 's') || (sct == 'S') ){
+
             printf("-Sin %d = -Sin %d\n Sin %d = Sin %d\n", a, d, b, c);
+
         }else if ( (sct == 'c') || (sct == 'C') ){
-                b = 360 - a;
-                c = a - 180;
-                d = 360 - c;
-                e = a;
+
                 printf(" Cos %d = Cos %d\n-Cos %d = -Cos %d\n", a, b, d, c);
+
             }else{
             printf("sorry?\n");
             }
@@ -133,84 +133,83 @@ int main()
         a = f;
 //1º quadrant
     if((a>0)&&(a<90)){
-
-        if( (sct == 's') || (sct == 'S') ){
             b = a;
             c = 180 - a;
             d = 180 + a;
             e = 360 - a;
+
+        if( (sct == 's') || (sct == 'S') ){
+
             printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
             printf(" Sin %d  =  Sin %d\n-Sin %d = -Sin %d\n", a, c, e, d);
+
         }else if ( (sct == 'c') || (sct == 'C') ){
-                b = a;
-                c = 180 - a;
-                d = 180 + a;
-                e = 360 - a;
+
                 printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
                 printf(" Cos %d  =  Cos %d\n-Cos %d = -Cos %d\n", a, e, c, d);
+
             }else{
             printf("sorry?\n");
             }
     }else
 //2º quadrant
     if( (a>90)&&(a<180) ){
-
-        if( (sct == 's') || (sct == 'S') ){
             b = 180 - a;
             c = a;
             d = 360 - a;
             e = 180 + a;
+
+        if( (sct == 's') || (sct == 'S') ){
+
             printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
             printf(" Sin %d = Sin %d\n-Sin %d = -Sin %d\n", a, b, d, e);
+
         }else if ( (sct == 'c') || (sct == 'C') ){
-                b = 180 - a;
-                c = a;
-                d = 360 - a;
-                e = 180 + a;
+
                 printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
                 printf("-Cos %d = -Cos %d\n Cos %d = Cos %d\n", a, d, b, e);
+
             }else{
             printf("sorry?\n");
             }
     }else
 //3º quadrant
     if( (a>180)&&(a<270) ){
-
-        if( (sct == 's') || (sct == 'S') ){
             b = a - 180;
             c = 360 - a;
             d = a;
             e = 360 - b;
+        if( (sct == 's') || (sct == 'S') ){
+
             printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
             printf("-Sin %d = -Sin %d\n Sin %d = Sin %d\n", a, e, c, b);
+
         }else if ( (sct == 'c') || (sct == 'C') ){
-                b = a - 180;
-                c = 360 - a;
-                d = a;
-                e = 360 - b;
+
                 printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
                 printf("-Cos %d = -Cos %d\n Cos %d = Cos %d\n", a, c, e, b);
+
             }else{
             printf("sorry?\n");
             }
     }else
 //4º quadrant
     if( (a>270)&&(a<360) ){
-
-        if( (sct == 's') || (sct == 'S') ){
             b = 360 - a;
             c = a - 180;
             d = 360 - c;
             e = a;
+
+        if( (sct == 's') || (sct == 'S') ){
+
             printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
             printf("-Sin %d = -Sin %d\n Sin %d = Sin %d\n", a, d, b, c);
+
         }else if ( (sct == 'c') || (sct == 'C') ){
-                b = 360 - a;
-                c = a - 180;
-                d = 360 - c;
-                e = a;
+
                 printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
                 printf(" Cos %d = Cos %d\n-Cos %d = -Cos %d\n", a, b, d, c);
+
             }else{
             printf("sorry?\n");
             }
