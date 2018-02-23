@@ -17,7 +17,7 @@ int main()
             a = f;
         }
 
-        if((a>0)&&(a!=0)&&(a!=90)&&(a!=180)&&(a!=270)&&(a!=360)){
+        if( (a>0)&&(a!=0)&&(a!=90)&&(a!=180)&&(a!=270)&&(a!=360) ){
     printf("Sine or Cosine? (s/c)\n");
         scanf(" %c", &sct);
         printf("\n");
@@ -30,7 +30,7 @@ int main()
         }
 
 //1º quadrant
-    if((a>0)&&(a<90)){
+    if( (a>0)&&(a<90) ){
         b = a;
         c = 180 - a;
         d = 180 + a;
