@@ -4,11 +4,19 @@
 int main()
 {
 
-    int a, b, c, d, e, f, g, h;
+    int a, b, c, d, e, f, g;
+    int h = 0;
     char sct;
 
     printf("Insert an angle\n");
         scanf(" %d", &a);
+
+        if( a > 360 ){
+            h = a;
+            f = a % 360;
+            a = f;
+        }
+
         if((a>0)&&(a!=0)&&(a!=90)&&(a!=180)&&(a!=270)&&(a!=360)){
     printf("Sine or Cosine? (s/c)\n");
         scanf(" %c", &sct);
@@ -16,6 +24,11 @@ int main()
         }else if(a<0){
             printf("wtf?\n");
         }
+
+        if( h != 0 ){
+            a = h;
+        }
+
 //1º quadrant
     if((a>0)&&(a<90)){
 
@@ -92,7 +105,7 @@ int main()
             printf("sorry?\n");
             }
     }else
-
+//acutes
     if(a==0){
         printf("\nThe cosine of 0(360) is equal to 1 and\nThe cosine of 180 = -1\nBoth sines equals to 0 though\n");
     }else
@@ -114,11 +127,11 @@ int main()
     }else
 //>360
     if(a>360){
+        h = a;
         f = a % 360;
         g = a / 360;
-        h = a;
         a = f;
-        //1º quadrant
+//1º quadrant
     if((a>0)&&(a<90)){
 
         if( (sct == 's') || (sct == 'S') ){
@@ -202,26 +215,27 @@ int main()
             printf("sorry?\n");
             }
     }else
-    //acute
+//acute
     if(a==90){
-        printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
+        printf("\n%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
         printf("The sine of 90 is equal to 1 and\nThe sine of 270 = -1\nBoth cosines equals to 0 though\n");
     }else
 
     if(a==180){
-        printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
+        printf("\n%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
         printf("The cosine of 180 is equal to -1 and\nThe cosine of 0(360) = 1\nBoth sines equals to 0 though\n");
     }else
 
     if(a==270){
-        printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
+        printf("\n%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
         printf("The sine of 270 is equal to -1 and\nThe sine of 90 = 1\nBoth cosines equals to 0 though\n");
     }else
 
     if(a==360){
-        printf("%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
+        printf("\n%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
         printf("The cosine of 360(0) is equal to 1 and\nThe cosine of 180 = -1\nBoth sines equals to 0 though\n");
     }
 }
+
     return 0;
 }
