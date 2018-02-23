@@ -94,23 +94,23 @@ int main()
     }else
 
     if(a==0){
-        printf("The cosine of 0(360) is equal to 1 and\nThe cosine of 180 = -1\nBoth sines equals to 0 though\n");
+        printf("\nThe cosine of 0(360) is equal to 1 and\nThe cosine of 180 = -1\nBoth sines equals to 0 though\n");
     }else
 
     if(a==90){
-        printf("The sine of 90 is equal to 1 and\nThe sine of 270 = -1\nBoth cosines equals to 0 though\n");
+        printf("\nThe sine of 90 is equal to 1 and\nThe sine of 270 = -1\nBoth cosines equals to 0 though\n");
     }else
 
     if(a==180){
-        printf("The cosine of 180 is equal to -1 and\nThe cosine of 0(360) = 1\nBoth sines equals to 0 though\n");
+        printf("\nThe cosine of 180 is equal to -1 and\nThe cosine of 0(360) = 1\nBoth sines equals to 0 though\n");
     }else
 
     if(a==270){
-        printf("The sine of 270 is equal to -1 and\nThe sine of 90 = 1\nBoth cosines equals to 0 though\n");
+        printf("\nThe sine of 270 is equal to -1 and\nThe sine of 90 = 1\nBoth cosines equals to 0 though\n");
     }else
 
     if(a==360){
-        printf("The cosine of 360(0) is equal to 1 and\nThe cosine of 180 = -1\nBoth sines equals to 0 though\n");
+        printf("\nThe cosine of 360(0) is equal to 1 and\nThe cosine of 180 = -1\nBoth sines equals to 0 though\n");
     }else
 //>360
     if(a>360){
