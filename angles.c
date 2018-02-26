@@ -215,6 +215,10 @@ int main()
             }
     }else
 //acute
+    if(a==0){
+        printf("\nThe cosine of 0(360) is equal to 1 and\nThe cosine of 180 = -1\nBoth sines equals to 0 though\n");
+    }else
+        
     if(a==90){
         printf("\n%d is congruent to %d\nIt turned %d times\n\n", h, a, g);
         printf("The sine of 90 is equal to 1 and\nThe sine of 270 = -1\nBoth cosines equals to 0 though\n");
