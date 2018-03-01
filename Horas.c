@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-// bjkhjkhjk
-/*sdasdasdasd
-*/
+
 int main()
 {
 
@@ -23,6 +21,10 @@ int main()
 
     if((horas >= 12)&&(horas <= 24)){
         horas = horas - 12;
+    }
+
+    if(horas == 12){
+        horas = 0;
     }
 
     if((horas >= 0)&&(horas < 12)){
